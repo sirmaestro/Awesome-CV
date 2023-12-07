@@ -1,0 +1,133 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-nephritis}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo[circle,noedge,left]{profile}
+\name{Jordan}{Chen}
+\position{Computer Systems Engineering Student}
+\address{Unit 2, 54 Dornwell Road, Three Kings, Auckland, New Zealand}
+
+\mobile{(+64) 22-192-5561}
+\email{jordanchen99@gmail.com}
+% \homepage{www.posquit0.com}
+\github{sirmaestro}
+\linkedin{jordan-chen-25129578}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \extrainfo{extra informations}
+
+% \quote{``Be the change that you want to see in the world. Now!"}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Company Recruitment Team}
+  {Xero \\Te Ara Turoa\\96 St Georges Bay Road\\Parnell\\Auckland 1052}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Job Application for Graduate Developer}
+% How the letter is opened
+\letteropening{Dear Xero,}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+% \letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[L]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Jordan Chen~~~·~~~Cover Letter}
+  {}
+
+% Print the title with above letter informations
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+\lettersection{About Me}
+I am a New Zealand citizen currently studying my final year in Computer Systems Engineering at the University of Auckland. I have a passion for making a difference by using technology as a tool for the benefit of society. Throughout my University degree, I have also taken internships which allowed me to work at both a small and a large tech company. From these experiences, I have excelled at working with others, adapting to the technologies, and making a meaningful contribution to the projects.
+
+\lettersection{Why Xero?}
+Xero is one of the largest software based companies in New Zealand. New products and features are constantly being created by developers and pushed out to a large user base. From my previous experience at Xero, I thoroughly enjoyed this kind of environment. I liked the work culture, easygoing people, and the constant effort to improve and maintain the products. I believe working at Xero will give me the opportunity to grow as there are many different aspects of technology development which I will be exposed to. I will be able to learn many business practices, technology trends, and security safeguards while working alongside talented developers at Xero.
+
+\lettersection{Why Me?}
+I believe I have the right skill-set for working at Xero. Resilience, Problem solving, Technical learning is what I take pride in and also what I'm known for. I have demonstrated excellent communication and teamwork skills which is essential for a fast-paced ever-changing software environment. Throughout various projects, I am able to keep up with the objectives while also ensuring the team is on the same page. If I'm given this chance to work at Xero I will definitely perform above and beyond expectations with everything I got.
+
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+\makeletterclosing
+
+\end{document}
