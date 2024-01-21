@@ -93,6 +93,11 @@ Or using docker:
 docker run --rm --user $(id -u):$(id -g) -i -w "/doc" -v "$PWD":/doc thomasweise/texlive make
 ```
 
+```PowerShell
+docker run --rm -i -w "/doc" -v ${PWD}:/doc thomasweise/texlive make
+docker run --rm -i -w "/doc" -v ${PWD}:/doc thomasweise/docker-texlive-full make
+```
+
 In either case, this should result in the creation of ``{your-cv}.pdf``
 
 
